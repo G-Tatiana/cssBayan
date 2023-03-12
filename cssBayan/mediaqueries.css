@@ -51,6 +51,10 @@
         cursor: pointer;
     }
 
+    .mem:hover > .mem-item > .mem-input ~ .mem-title > .title_img  {
+        display: block;
+    }
+
     .mem-title:hover ~ .mem-img {
         display: block;
         scale: 1.0;
