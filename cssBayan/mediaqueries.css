@@ -53,7 +53,7 @@
 
     .mem-title:hover ~ .mem-img {
         display: block;
-        /* scale: 1.0; */
+        scale: 1.0;
         animation: ani 0.7s forwards;
         }
         @keyframes ani {
