@@ -82,6 +82,7 @@ p {
 }
 
 .title_img {
+    display: none;
     height: 12px;
     transform: translateY(20%);
     transition: transform .5s;
