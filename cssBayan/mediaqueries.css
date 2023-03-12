@@ -1,0 +1,73 @@
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .task-title {
+        font-size: 20px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .mem-img {
+        max-width: 100%;
+        height: auto
+    }
+}
+
+@media (min-width: 321px) and (max-width: 820px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .task-title {
+        font-size: 25px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    .mem-img {
+        max-width: 60%;
+        height: auto
+    }
+}
+
+@media (min-width: 821px) and (max-width: 1920px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .mem-img {
+        max-width: 60%;
+        height: auto
+    }
+}
+
+@media (hover: hover){
+    .mem:hover {
+        color: black;
+        transition: color .2s;
+        cursor: pointer;
+    }
+
+    .mem-title:hover ~ .mem-img {
+        display: block;
+        /* scale: 1.0; */
+        animation: ani 0.7s forwards;
+        }
+        @keyframes ani {
+        0% {scale: 0.8;}
+        100% {scale: 1.0;}
+    }
+
+    .mem-input:hover ~ .mem-title > .title_img {
+        transform: rotate(180deg);
+        transition: transform .7s;
+    }
+
+    .mem-item:hover > .mem-img {
+        display: block;
+
+    }
+}
