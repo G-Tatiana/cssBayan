@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    color: rgb(196, 75, 75);
+  }
+
+ul li {
+    list-style: none;
+  }
+
+p {
+    margin: 0 0 0.3em;
+}
+
+.container {
+    padding: 2em 0;
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 0.6em;
+}
+
+.mem-item {
+    border-bottom: 0.125em solid rgba(128, 128, 128, 0.5) ;
+    margin-bottom: 0.6em;
+}
+
+.mem-item:active {
+    opacity: 0.5;
+}
+
+
+.mem-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0.6em 1em;
+}
+
+.mem-img {
+    margin: auto;
+    display: none;
+    padding: 0.6em 0;
+}
+
+.mem-input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    visibility: hidden;
+    display: block;
+}
+
+.mem-input:checked ~ .mem-title {
+    color: black;
+}
+
+
+.mem-input:checked ~ .mem-img {
+    display: block;
+    transform: scale(1.0);
+}
+
+.mem-input:checked ~ .mem-title > .title_img {
+	transform: rotate(180deg);
+    transition: transform .7s;
+}
+
+.title_img {
+    display: none;
+    height: 0.75;
+    transform: translateY(20%);
+    transition: transform .5s;
+}
+
+.footer {
+    height: 30em;
+}
